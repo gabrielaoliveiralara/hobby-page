@@ -6,7 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hobby Page</title>
     <link rel="stylesheet" href="style.css">
-
+    <script>
+        function displayDate() {
+            document.getElementById("date").innerHTML = Date();
+        }
+    </script>
 </head>
 <body>
     <header>
@@ -81,6 +85,8 @@
     </main>
     <footer>
         <p>Blog created by <a href="https://github.com/gabrielaoliveiralara" target="_blank">Gabriela Lara</a> for the Hobby Page Project.</p>
+        <button type="button" onclick="displayDate()">Show Date</button>
+        <p id="date"></p>
     </footer>
 </body>
 </html>
