@@ -7,13 +7,9 @@
     <title>Hobby Page</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="estilos/media-query.css">
-    <script>
-        function displayDate() {
-            document.getElementById("date").innerHTML = Date();
-        }
-    </script>
+    <script src="script.js"></script>
 </head>
-<body>
+<body onload="charging()">
     <header>
         <h1>THE BEAUTY TIPS</h1>
         <p>Simplicity, practicality and products for real life!</p>
@@ -83,11 +79,15 @@
             </picture> 
             
         </article>
+        <section id="skin">
+            <h1>Current time at your location, for your self care moment!</h1>
+        </section>
+        <div id="msg">
+            Here will be the day. 
+        </div>
     </main>
     <footer>
         <p>Blog created by <a href="https://github.com/gabrielaoliveiralara" target="_blank">Gabriela Lara</a> for the Hobby Page Project.</p>
-        <button type="button" onclick="displayDate()">Show Date</button>
-        <p id="date"></p>
     </footer>
 </body>
 </html>
